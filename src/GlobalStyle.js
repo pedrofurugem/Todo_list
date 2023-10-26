@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-}
+    text-decoration: none;
+    list-style: none
+}   
 
 `
