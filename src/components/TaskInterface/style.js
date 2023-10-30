@@ -74,7 +74,6 @@ export const DescRightContainer = styled.p`
 
 export const TaskBox = styled.div`
     display: flex;
-    width: 410px;
     padding: 15px;
     align-items: center;
     gap: 15px;
