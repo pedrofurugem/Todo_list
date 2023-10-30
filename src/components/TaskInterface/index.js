@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 import { 
   MainContainer, 
@@ -20,6 +20,8 @@ import Logo from '../../images/logo.png'
 export const TaskInterface = () => {
   const [tasks, setTasks] = useState([{ id: Math.random(), text: 'Tarefa 1'},
                                       { id: Math.random(), text: 'Tarefa 2'}])
+
+  const taskText = useRef("")                                  
   
   function insertNewTask(event){
     if(event.key === "Enter"){
@@ -53,6 +55,7 @@ export const TaskInterface = () => {
             <InputTask type="text"
                        placeholder="Digite sua próxima tarefa aqui... "
                        onKeyDown={insertNewTask}
+                       ref={taskText}
             />
           </RigthContainer>
         </Container>
