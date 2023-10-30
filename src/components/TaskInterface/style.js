@@ -49,8 +49,6 @@ export const Description = styled.p`
 
 export const RigthContainer = styled.div`
     display: flex;
-    width: 500px;
-    height: 474px;
     padding: 45px;
     flex-direction: column;
     align-items: flex-start;
@@ -74,6 +72,7 @@ export const DescRightContainer = styled.p`
 
 export const TaskBox = styled.div`
     display: flex;
+    width: 410px;
     padding: 15px;
     align-items: center;
     gap: 15px;
