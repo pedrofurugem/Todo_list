@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import axios from 'axios';
 
 import { 
   MainContainer, 
@@ -16,21 +17,24 @@ import {
 } from './style.js'
 
 import Logo from '../../images/logo.png'
-
+//https://plataforma.universodev.com.br/api/todolist/
 export const TaskInterface = () => {
-  const [tasks, setTasks] = useState([{ id: Math.random(), text: 'Tarefa 1'},
-                                      { id: Math.random(), text: 'Tarefa 2'}])
+  const [tasks, setTasks] = useState([{ id: Math.random(), text: 'Tarefa 1'}, { id: Math.random(), text: 'Tarefa 2'}])
+  
   const taskText = useRef("")                                  
   
-  function insertNewTask(event){
+  async function insertNewTask(event){
     if(event.key === "Enter"){
-      setTasks([...tasks, {id: Math.random(), text: event.target.value }])
+      const { data: newTeskInfo } = await axios.put('https://plataforma.universodev.com.br/api/todolist/', { text: taskText.current.value })
+      setTasks([...tasks, {id: newTeskInfo.id, text: newTeskInfo.text }])
       event.target.value = ""
     }
   }
   
-  function removeTask(id){
+  async function removeTask(id){
+    const data = await axios.delete(`https://plataforma.universodev.com.br/api/todolist/${id}`)
     setTasks(tasks.filter((task) => task.id !== id))
+    console.log(data)
   }
 
   return(
