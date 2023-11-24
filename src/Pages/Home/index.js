@@ -1,4 +1,5 @@
 import Calendar from '../../images/icon.png'
+import { Link } from 'react-router-dom'
 
 import { MainContainer, 
          Content,
@@ -13,9 +14,11 @@ export const Home = () => {
             <Content>
                 <LeftContent>
                     <Title>Organize sua vida com <br/> <span>simplicidade e eficiência</span></Title>
-                    <Button>Iniciar</Button>
+                    <Link to="/TaskInterface">
+                      <Button>Iniciar</Button>
+                    </Link>
                 </LeftContent>
-                <img src={Calendar} alt="claendar"/>
+                <img src={Calendar} alt="calendar"/>
             </Content>
         </MainContainer>
     )
