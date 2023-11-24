@@ -19,7 +19,7 @@ import {
 import Logo from '../../images/logo.png'
 
 export const TaskInterface = () => {
-  const [tasks, setTasks] = useState([{ id: Math.random(), text: 'Tarefa 1'}, { id: Math.random(), text: 'Tarefa 2'}])
+  const [tasks, setTasks] = useState([])
   
   const taskText = useRef("") 
   
