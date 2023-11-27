@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from '../Pages/Home/index'
 import { TaskInterface } from '../Pages/TaskInterface/index'
 
-export function MyRoutes(){
+export const MyRoutes = () =>{
     return(
         <BrowserRouter>
           <Routes>

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import axios from 'axios';
 
-import TaskBox from '../../components/Task/index.js'
+import { Task } from '../../components/Task/index.js'
 
 import { 
   MainContainer, 
@@ -53,7 +53,7 @@ export const TaskInterface = () => {
           <TitleRightContainer>Minhas Tarefas</TitleRightContainer>
           <DescRightContainer>Tarefas do dia...</DescRightContainer>
           { tasks.map((task) => ( 
-            <TaskBox id={task.id} text={task.text} updateTasks={setTasks}/>
+            <Task id={task.id} text={task.text} updateTasks={setTasks}/>
           ))}
           <InputTask type="text"
                       placeholder="Digite sua próxima tarefa aqui... "

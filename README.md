@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+Projeto Pokedex Quest - React Avançado
+projeto do curso DevQuest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Breve descrição das funcionalidades da aplicação entregue; Ferramentas utilizadas, e o por que estas foram escolhidas para a realização do desafio;
+funcionalidades do Projeto
+Os pokemons e suas informações são consumidos da API pública: pokeApi
+Na pagina inicial são apresentados 10 pokemons em seus respectivos cards
+No canto superior esquerdo do cabeçalho há um botão para mudança de tema(Change Theme) light e dark via context, incluindo a pagina do Pokemon
+Abaixo dos cards contém um botão(Show More) para listar mais 10 pokemons
+Ao clicar em um card o usuário será direcionado para a pagina do Pokemon em específico
+Na pagina do Pokemon em específico, há um card maior contendo suas caracteristicas
+Nela apresentado a imagem, mais 4 ilustrações contendo suas cores normal e brilhante, habilidades, movimentos, tipo, e uma descrição sobre as espécies de pokemon brilhantes
+A baixo ha um botão para o usuário retornar a tela inicial dos cards dos pokemons
+Ferramentas
+Projeto desenvolvido com:
 
-## Available Scripts
+biblioteca: React
+linguagem: JavaScript
+editor de código: visual studio code
+informações: Aa biblioteca React contém componentes, nos componentes são renderizados códigos JSX Neste projeto em específico utilizamos bibliotecas como o styled components, rotas e hooks de estado(sendo essas bibliotecas do próprio react)
 
-In the project directory, you can run:
+Decisões e planejamento
+Este é um projeto de front end, portanto foi utilizada a biblioteca react em prol de seu desenvolvimento, ao planejar esta aplicação, os primeiros passos foram fazer as requisições api, em seguida em inserir as rotas, renderizar os components com código JSX, aplicar o context e por fim estilizar a aplicação com styled components
 
-### `npm start`
+Esse projeto por si só foi um grande desafio tanto para meus estudos e minha aprendizagem em Front-End, ainda posso aprimorar mais
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Como rodar o Projeto
+gh repo clone pedrofurugem/pokemons_project
+npm install, na pasta do projeto
+para rodar: npm start

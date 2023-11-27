@@ -25,7 +25,7 @@ export const TaskBox = styled.div`
     }
 `
 
-export const Task = styled.p`
+export const TaskText = styled.p`
     color: #35383E;
     font-size: 20px;
     font-weight: 700;
